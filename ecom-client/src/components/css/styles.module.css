@@ -1,0 +1,128 @@
+/* Category.module.css */
+
+.container {
+    padding: 20px;
+    height: 100vh;
+  }
+  
+  .title {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    margin: 16px 0;
+  }
+  
+  .input {
+    padding: 8px 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    max-width: 320px;
+    width: 100%;
+  }
+  
+  .input:focus {
+    border-color: #3b82f6;
+  }
+  
+  .button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    justify-content: center;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 9999px;
+    height: 40px;
+    width: 100px;
+    cursor: pointer;
+  }
+  
+  .button img {
+    width: 20px;
+  }
+  
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .tableHead {
+    border-bottom: 2px solid #e5e7eb;
+  }
+  
+  .tableHead th {
+    padding: 12px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    text-align: left;
+  }
+  
+  .tableBody td {
+    padding: 12px;
+    font-size: 0.875rem;
+    color: #4b5563;
+  }
+  
+  .actionButtonContainer {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 12px;
+    font-size: 0.875rem;
+  }
+  
+  .deleteButton,
+  .viewButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 16px;
+    width: 100px;
+    height: 32px;
+    border: none;
+    border-radius: 9999px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .deleteButton {
+    background-color: #ef4444;
+  }
+  
+  .viewButton {
+    background-color: #3b82f6;
+  }
+  
+  .pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 16px;
+  }
+  
+  .paginationButton {
+    margin: 0 8px;
+    padding: 8px 16px;
+    border-radius: 8px;
+    background-color: #d1d5db;
+    color: #374151;
+    cursor: pointer;
+    outline: none;
+    border: none;
+  }
+  
+  .paginationButton[disabled] {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  
+  .pageInfo {
+    padding: 0 16px;
+  }
+  

@@ -1,0 +1,63 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a;
+  }
+
+  .container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #363636;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  h13 {
+    color: #fff;
+    font-size: large;
+    text-align: center;
+  }
+
+  h14, h15 {
+    color: #fff;
+    font-size: medium;
+  }
+
+  p {
+    line-height: 1.5;
+    margin-bottom: 20px;
+    color: #fff;
+    text-align: justify;
+    font-size: small;
+  }
+
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+/* Basic reset for margins and padding */
+dl {
+  margin-top: -20px;
+  font-family: 'Poppins', sans-serif; /* Use a clean font */
+}
+
+/* Style for the definition terms */
+dt {
+  font-size: small;           /* Slightly larger font size */
+  color: #fff;             /* Dark blue color for the terms */
+}
+
+/* Style for the definition descriptions */
+dd {
+  margin:0 0 10px 0px;     /* Indent the descriptions and add space below */
+  font-size: small;             /* Normal font size */
+  color: #fff;             /* Slightly lighter color for readability */ 
+  line-height: 15px;
+}
+

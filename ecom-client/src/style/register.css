@@ -1,0 +1,116 @@
+/* Register.css */
+.register-container {
+    min-width: 400px;
+    margin: 100px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+  }
+  
+  .register-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #1A1A1A;
+  }
+  
+  .register-container .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .register-container label {
+    display: block;
+    margin-bottom: 5px;
+    color: #1A1A1A;
+    font-size: small;
+  }
+  
+  .register-container input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #1A1A1A;
+  }
+  
+  .register-container input:focus {
+    border-color: #fff;
+    outline: none;
+  }
+  
+  .register-container .btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #8d593a;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .register-container .btn:hover {
+    background-color: #583521;
+  }
+  
+  .register-container .error {
+    color: red;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  
+  .register-container .login-link {
+    text-align: center;
+    margin-top: 10px;
+    color: #1A1A1A;
+    font-size: small;
+  }
+  
+  .register-container .login-link a {
+    color: #1A1A1A;
+    text-decoration: none;
+  }
+  
+  .register-container .login-link a:hover {
+    text-decoration: underline;
+  }
+
+  /* Style for the select element */
+select {
+  width: 100px;
+  background-color: rgb(54, 54, 54); /* Dark background */
+  color: rgb(255, 255, 255);         /* White text */
+  border: none;                      /* No border */
+  border-radius: 5px;               /* Rounded corners */
+  font-size: 16px;                   /* Font size */
+  padding: 5px 5px;                /* Padding for better touch targets */
+  cursor: pointer;                   /* Pointer cursor on hover */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transitions */
+}
+
+/* Optional: Style for the select element on focus */
+select:focus {
+  outline: none;                     /* Remove default focus outline */
+  background-color: rgb(70, 70, 70); /* Slightly lighter background on focus */
+}
+
+/* Optional: Style for the dropdown arrow */
+select::after {
+  content: '▼';                      /* Custom dropdown arrow */
+  position: absolute;                /* Position it absolutely */
+  right: 10px;                      /* Position from the right */
+  top: 50%;                         /* Center vertically */
+  transform: translateY(-50%);      /* Adjust for vertical centering */
+  color: rgb(255, 255, 255);        /* Arrow color */
+}
+
+/* Style for the options */
+option {
+  background-color: rgb(54, 54, 54); /* Match the select background */
+  color: rgb(255, 255, 255);         /* White text */
+}
+
+/* Optional: Style for option on hover */
+option:hover {
+  background-color: rgb(70, 70, 70); /* Lighter background on hover */
+}

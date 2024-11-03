@@ -1,0 +1,278 @@
+/* dashboard.css */
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #FFF; /* White background for the entire page */
+}
+
+header {
+  width: 1360px;
+  background-color: #B5734C; /* Header background color */
+  color: #FFF; /* White text color */
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h5 {
+  font-size: large;
+  margin: 0;
+}
+
+.logout-button {
+  background-color: #1A1A1A; /* Dark button color */
+  color: #FFF; /* White text color */
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  font-size: small;
+}
+
+.logout-button:hover {
+  background-color: #333; /* Darker shade on hover */
+}
+
+main {
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
+  background-color: #FFF; /* White background for the main content */
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for the search input */
+input[type="search"] {
+  width: 50%;               /* Full width of the container */
+  padding: 10px 15px;       /* Padding for better touch targets */
+  margin: 10px 0;           /* Margin for spacing */
+  border: 1px solid #B5734C; /* Border color */
+  border-radius: 5px;       /* Rounded corners */
+  background-color: #363636;   /* White background */
+  color: #fff;           /* Dark text color */
+  font-size: 16px;          /* Font size */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: border-color 0.3s, box-shadow 0.3s; /* Smooth transition */
+}
+
+/* Style for the search input on focus */
+input[type="search"]:focus {
+  outline: none;            /* Remove default focus outline */
+  border-color: #A65A3D;   /* Darker border color on focus */
+  box-shadow: 0 0 5px rgba(166, 90, 61, 0.5); /* Shadow on focus */
+}
+
+/* Optional: Placeholder styling */
+input[type="search"]::placeholder {
+  color: #B0B0B0;           /* Light gray color for placeholder text */
+  opacity: 1;               /* Ensure full opacity */
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  background-color: #1A1A1A;
+  padding: 10px;
+  margin: px;
+  border: 1.5px solid #363636; /* Border color */
+  border-radius: 5px;
+}
+
+input[type="file"] {
+  margin: 10px 0;
+  color: #1A1A1A;
+}
+
+/* Style for the select element */
+select[name="rating"] {
+  width: 8%; /* Full width */
+  padding: 3px; /* Padding for better touch targets */
+  margin: 10px 0; /* Margin for spacing */
+  border: 1px solid #B5734C; /* Border color */
+  border-radius: 5px; /* Rounded corners */
+  background-color: #FFF; /* White background */
+  color: #1A1A1A; /* Dark text color */
+  font-size: 16px; /* Font size */
+  appearance: none; /* Remove default styling */
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><polygon points="0,0 20,0 10,10" fill="%23B5734C"/></svg>'); /* Custom dropdown arrow */
+  background-repeat: no-repeat; /* Prevent repeating */
+  background-position: right 10px center; /* Position the arrow */
+  background-size: 12px; /* Size of the arrow */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: border-color 0.3s, background-color 0.3s; /* Smooth transition */
+}
+
+/* Style for the select element on focus */
+select[name="rating"]:focus {
+  outline: none; /* Remove default focus outline */
+  border-color: #A65A3D; /* Darker border color on focus */
+  background-color: #f9f9f9; /* Light gray background on focus */
+}
+
+/* Optional: Style for the select options */
+select[name="rating"] option {
+  background-color: #FFF; /* White background for options */
+  color: #1A1A1A; /* Dark text color for options */
+}
+
+button {
+  background-color: #B5734C; /* Button background color */
+  color: #FFF; /* White text color */
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #A65A3D; /* Darker shade on hover */
+}
+
+.post {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 15px;
+  margin: 15px 0;
+  background-color: #f9f9f9; /* Light gray background for posts */
+}
+
+.post h8 {
+  margin: 0;
+  color: #1A1A1A; /* Dark text color */
+}
+
+.post img {
+  color: #1A1A1A;
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  font-size: small;
+}
+
+h6, h7, h8, h9, h10, h11, h12 {
+  font-size: medium;
+  color: #1A1A1A; /* Dark text color for headings */
+}
+
+p {
+  color: #fff;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  width: 100px;
+  background-color: #1A1A1A; /* Light gray background for comments/reviews */
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form input[type="text"],
+form textarea {
+  margin-bottom: 10px;
+}
+
+form button {
+  width: 100px;          /* Set the width of the button */
+  margin: 0px 0 5px 0; /* Set top and bottom margin, remove left/right margin */
+  display: block;       /* Ensures the button behaves like a block element */
+  text-align: center;     /* Aligns text to the left within the button */
+}
+
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .logout-button {
+    margin-top: 10px;
+  }
+}
+
+/* drop-down menu */
+.hero{
+  width: 100%;
+  min-height: 100vh;
+  background: #ccc;
+  color: #1a1a1a;
+}
+.sub-menu-wrap{
+  position: absolute;
+  top: 100%;
+  right: 10%;
+  width: 320px;
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height 0.5s;
+}
+.sub-menu-wrap.open-menu{
+  max-height: 400px;
+}
+.sub-menu{
+  background: #fff;
+  padding: 20px;
+  margin: 10px;
+}
+.user-info{
+  display: flex;
+  align-items: center;
+}
+.user-info h2{
+  font-weight: 500;
+}
+.user-info img{
+  width: 60px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+.sub-menu hr{
+  border: 0;
+  height: 1px;
+  width: 100%;
+  background-color: #ccc;
+  margin: 15px 0 10px;
+}
+
+.sub-menu-link{
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #1a1a1a;
+  margin: 12px 0;
+}
+.sub-menu-link p{
+  width: 100%;
+}
+.sub-menu-link img{
+  width: 40px;
+  background: #ccc;
+  border-radius: 50%;
+  padding: 8px;
+  margin-right: 15px;
+}
+.sub-menu-link span{
+  font-size: 22px;
+  transition: transform 0.5s;
+}
+.sub-menu-link:hover span{
+  transform: translateX(5px);
+}
+.sub-menu-link:hover p{
+  font-weight: 600;
+}
